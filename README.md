@@ -40,6 +40,6 @@ Team members:
   - `Le Duc Chinh`
   - `Nguyen Quang Duc`
   - `Nguyen Ba Duc Anh`
-  - `Tran Gia Dinh`
-demo video: (https://youtu.be/_yIsIZmzkaY?si=Oo7Q2V0iPWRNlICT)
->>>>>>> 2cd4523556210fa973e95b75ee9005a39c38d8ff
+  - `Tran Gia Dinh`.
+=======
+Demo video: (https://youtu.be/_yIsIZmzkaY?si=Oo7Q2V0iPWRNlICT)
