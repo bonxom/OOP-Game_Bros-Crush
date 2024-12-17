@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# OOP_Project
+# Bros||Crush
 
 A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
 
@@ -35,5 +35,11 @@ For example, `core:clean` removes `build` folder only from the `core` project.
 =======
 # OOP_project_map_merged
 Merge map OOP project
+Team members:
+  - `Ho Minh Dung`
+  - `Le Duc Chinh`
+  - `Nguyen Quang Duc`
+  - `Nguyen Ba Duc Anh`
+  - `Tran Gia Dinh`
 demo video: (https://youtu.be/_yIsIZmzkaY?si=Oo7Q2V0iPWRNlICT)
 >>>>>>> 2cd4523556210fa973e95b75ee9005a39c38d8ff
