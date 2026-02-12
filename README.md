@@ -1,41 +1,134 @@
-# Bros||Crush
+# Bros || Crush 🎮
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+<div align="center">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/libGDX-E74C3C?style=for-the-badge&logo=gradle&logoColor=white" alt="libGDX">
+  <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" alt="Gradle">
+</div>
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+## 📖 Giới thiệu
 
-## Platforms
+**Bros || Crush** là một trò chơi 2D platform adventure được phát triển như đồ án môn Lập trình Hướng đối tượng (OOP) tại Đại học Bách Khoa Hà Nội. 
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
+Trong game, người chơi sẽ vào vai **Chính** - một sinh viên đại học dũng cảm, phải vượt qua nhiều thử thách và đối đầu với vô số quái vật để giải cứu công chúa **Linh** khỏi bàn tay của phù thủy độc ác **Eyesightasu**. 
 
-## Gradle
+Điểm đặc biệt của game là cốt truyện sáng tạo với kết thúc mở: sau khi chiến thắng boss ở màn cuối, người chơi sẽ phải đối diện với lựa chọn khó khăn giữa việc giải cứu công chúa Linh hay ba người bạn thân đã hy sinh trong hành trình.
 
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
+## ✨ Tính năng chính
 
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
+- 🗺️ **4 màn chơi đa dạng** với độ khó tăng dần
+- 👹 **Nhiều loại quái vật** với hành vi và khả năng tấn công khác nhau:
+  - Goblin
+  - Skeleton
+  - Mushroom
+  - Flying Eye
+  - Orc
+  - Boss cuối cùng với các kỹ năng đặc biệt
+- ⚔️ **Hệ thống chiến đấu** với nhiều combo tấn công
+- 💖 **Thanh máu (Health Bar)** cho nhân vật và enemy
+- 🎁 **Hệ thống vật phẩm và rương báu**
+- 🔥 **Bẫy và chướng ngại vật** như lava, spike traps
+- 🎵 **Âm thanh và hiệu ứng** sống động
+- 📜 **Cốt truyện hấp dẫn** với kết thúc mở đa dạng
+- 🎨 **Đồ họa 2D pixel art** đẹp mắt và mượt mà
 
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
-=======
-# Team members:
-  - `Ho Minh Dung`
-  - `Le Duc Chinh`
-  - `Nguyen Quang Duc`
-  - `Nguyen Ba Duc Anh`
-  - `Tran Gia Dinh`
-# Demo video: (https://youtu.be/_yIsIZmzkaY?si=Oo7Q2V0iPWRNlICT)
+## 🎮 Cách chơi
+
+### Điều khiển
+
+- **← →** hoặc **A D**: Di chuyển trái/phải
+- **Space** hoặc **W**: Nhảy
+- **J** hoặc **Left Click**: Tấn công
+- **K**: Kỹ năng đặc biệt
+- **ESC**: Tạm dừng game
+
+### Mục tiêu
+
+1. Vượt qua các màn chơi bằng cách tiêu diệt quái vật và tránh bẫy
+2. Thu thập vật phẩm từ rương để tăng sức mạnh
+3. Đánh bại boss ở màn cuối
+4. Đưa ra lựa chọn cuối cùng về số phận của các nhân vật
+
+## 🛠️ Công nghệ sử dụng
+
+- **Ngôn ngữ lập trình**: Java
+- **Game Framework**: [libGDX](https://libgdx.com/) - Framework mạnh mẽ cho phát triển game đa nền tảng
+- **Build Tool**: [Gradle](https://gradle.org/)
+- **Map Editor**: Tiled Map Editor
+- **Design Patterns**: 
+  - Singleton Pattern (GameManager, UIManager)
+  - Observer Pattern (WorldContactListener)
+- **Kỹ thuật OOP**:
+  - Tính kế thừa (Inheritance)
+  - Tính đóng gói (Encapsulation)
+  - Tính trừu tượng (Abstraction)
+  - Tính đa hình (Polymorphism)
+
+## 📦 Cấu trúc dự án
+
+```
+├── core/                 # Module chính chứa logic game
+│   ├── manager/         # Quản lý các thành phần cốt lõi
+│   ├── scenes/          # Quản lý hiển thị thanh máu
+│   ├── screens/         # Các màn hình game
+│   ├── sprites/         # Nhân vật, enemy, items, weapons
+│   ├── tools/           # Âm thanh, va chạm, tương tác
+│   └── UI/              # Giao diện người dùng
+├── lwjgl3/              # Platform desktop
+└── assets/              # Tài nguyên (sprites, maps, audio)
+```
+
+## 🚀 Hướng dẫn chạy game
+
+### Yêu cầu hệ thống
+
+- Java Development Kit (JDK) 11 hoặc cao hơn
+- Gradle (đã bao gồm wrapper)
+
+### Chạy game
+
+**Linux/Mac:**
+```bash
+./gradlew lwjgl3:run
+```
+
+**Windows:**
+```bash
+gradlew.bat lwjgl3:run
+```
+
+### Build file JAR
+
+```bash
+./gradlew lwjgl3:jar
+```
+
+File JAR sẽ được tạo tại `lwjgl3/build/libs/`
+
+## 🎥 Video Demo
+
+👉 [Xem video demo trên YouTube](https://youtu.be/_yIsIZmzkaY?si=Oo7Q2V0iPWRNlICT)
+
+## 👥 Nhóm phát triển
+
+**Nhóm 15 - Lớp 153989**
+
+| MSSV | Họ và tên | Vai trò |
+|------|-----------|---------|
+| 20235044 | Nguyễn Quang Đức | Nhóm trưởng - Base code, UI|
+| 20235023 | Lê Đức Chính | Màn 2, Health Bar, Logic công chúa |
+| 20235036 | Trần Gia Định | Màn 1, Logic cơ bản, Báo cáo |
+| 20235004 | Nguyễn Bá Đức Anh | Màn 4 (Boss), Slide thuyết trình |
+| 20235050 | Hồ Minh Dũng | Màn 3, Logic va chạm, Player movement, Map loading, Merge code |
+
+**Giáo viên hướng dẫn**: Trần Nhật Hoá
+
+## 📄 Giấy phép
+
+Dự án được phát triển cho mục đích học tập tại Trường Công nghệ Thông tin và Truyền thông - Đại học Bách Khoa Hà Nội.
+
+---
+
+<div align="center">
+  Made with ❤️ by Team 15
+</div>
